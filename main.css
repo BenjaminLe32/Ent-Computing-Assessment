@@ -6,24 +6,42 @@ html {
   padding: 0;
   width: 100%;
   font-family: verdana, sans-serif;
+  background-color: #00509d;
 }
 
 #header {
   background-color: #003f88;
   font: verdana;
-  border: 3px solid #ffd500;
-  width: 100%;
+  border: 2px solid #ffc300;
+  border-radius: 0% 0% 20px 20px;
+  width: auto;
   height: 100px;
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 2%;
+}
+
+#footer {
+  background-color: #003f88;
+  font: verdana;
+  border: 3px solid #ffc300;
+  border-radius: 20px 20px 0% 0%;
+  width: auto;
+  height: 100px;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.footertext {
+  color: white;
 }
 
 #image {
   max-height: 100%;
   max-width: 100%;
   border-radius: 10% 50%;
-  padding-right: 4%;
+  padding-left: 2%;
 }
 
 li {
@@ -35,25 +53,64 @@ li a:hover {
   background-color: #ffc300;
 }
 
-.active {
-  background-color: #00296b;
-}
-
 a {
   display: block;
   padding: 10px;
-  background-color: #ffd500;
+  background-color: #00509d;
   text-decoration: none;
   color: white;
   border-radius: 30px;
+  border: 2px solid #ffc300;
   margin-top: 12%;
 }
 
+#main {
+  margin: auto;
+  padding: auto 10%;
+  background-color: white;
+  border: 3px solid #ffc300;
+  background-image: linear-gradient(to bottom, #ffc300 11%, white 11%);
+  width: 80%;
+  height: 100%;
+  display: block;
+  border-radius: 30px;
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  top: 50%;
+  padding: 1%;
+  margin: 1%;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 2%;
+}
+
+h3 {
+  padding: 2%;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h4 {
+  padding-bottom: 4%;
+  padding-top: 4%;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
 #navbar {
   margin: 0;
   padding: 0;
   display: inline;
-  position: fixed;
+  position: static;
   top: 0;
 }
 
@@ -65,4 +122,42 @@ a {
 
 #navbar li {
   display: inline-block;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+}
+
+#tradinghours {
+  text-align: right;
+  justify-content: right;
+  margin: 0 auto;
+}
+
+#center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: auto;
+}
+
+.active {
+  background-color: #ffc300;
+}
+
+.top {
+  float: left;
+  width: 25%;
+  margin: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

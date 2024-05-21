@@ -8,17 +8,70 @@
     <header>
       <div id="header">
         <img id="image" src="logo.png" alt="ComputerCraze" />
+        <ul id="navbar">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Reservations.html">Reservations</a></li>
+          <li><a href="Location.html">Location</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="PCParts.html">PC Parts</a></li>
+          <li><a href="CablesAdapters.html">Cables/Adapters</a></li>
+          <li><a href="Software.html">Software</a></li>
+          <li><a href="PowerSupplies.html">Power Supplies</a></li>
+        </ul>
       </div>
-      <ul id="navbar">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="Reservations.html">Reservations</a></li>
-        <li><a href="Location.html">Location</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-        <li><a href="PCParts.html">PC Parts</a></li>
-        <li><a href="CablesAdapters.html">Cables/Adapters</a></li>
-        <li><a href="Software.html">Software</a></li>
-        <li><a href="PowerSupplies.html">Power Supplies</a></li>
-      </ul>
     </header>
+
+    <div id="main">
+      <h1>Reservations</h1>
+      <h4>
+        Choose a product, and we can reserve it for you for up to 3-4 days until
+        you arrive!
+      </h4>
+      <form action="/action_page.php">
+        <div>
+          <label for="fname"
+            >Enter your name, or anything we can identify you with:
+          </label>
+          <input type="text" id="name" name="name" /><br />
+        </div>
+
+        <label for="products">Choose desired product:</label>
+        <select name="products" id="products">
+          <option value="IntelCPU">Intel Celeron g6900 cpu lga1700</option>
+          <option value="Sata1TBDrive">1TB wd sata3 7200 hard disk</option>
+          <option value="16GBRam">16gb ddr4/3200 desktop ram</option>
+          <option value="Ethernet">
+            CAT5E UTP Ethernet Network Cable 50cm Blue
+          </option>
+          <option value="HDMI">1.8Mtr m/m hdmi cable</option>
+          <option value="PrinterCable">1.8Mtr AB usb2 printer cable</option>
+          <option value="MicrosoftOffice365">
+            Microsoft Office 365 family 1 yr 6 devices
+          </option>
+          <option value="Norton360">
+            Nortons security standard 1 yr 1 device
+          </option>
+          <option value="500WGeneric">500watt generic power supply</option>
+          <option value="UPSOutlet">UPS Eaton 5E 480watt 2 outlets</option>
+          <option value="USB6Port">Usb 6 port charging station</option>
+        </select>
+
+        <br /><input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <footer>
+      <div id="footer">
+        <h2 class="footertext">Email: sales@computercraze.com.au</h2>
+        <h2 class="footertext">Phone: 0298292321</h2>
+        <div id="tradinghours">
+          <h3 class="footertext">
+            Trading Hours:<br />
+            Monday - Friday 9am - 6pm <br />
+            Saturday - Sunday 9am - 1pm
+          </h3>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
